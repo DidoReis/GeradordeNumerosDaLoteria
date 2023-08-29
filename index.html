@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de números de loteria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Gerador de números de loteria</h1>
+        <table id="result"></table>
+        <button type="button" id="generate">★ Gerar novamente ★</button>
+      </main>
+      <form id="app">
+        <fieldset>
+          <legend>Configurações</legend>
+          <label>Número de linhas
+            <input type="number" name="numberOfRows" value="10" required>
+          </label>
+          <label>Números por linhas
+            <input type="number" name="numbersPerRow" value="5" required>
+          </label>
+          <label aria-label="Start Number">Números entre
+            <input type="number" name="startNumber" value="1" required>
+          </label>
+          <label aria-label="End Number">e
+            <input type="number" name="endNumber" value="50" required>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>Quantos?
+            <input type="number" name="bonusNumbers" value="2" required>
+          </label>
+          <legend>Números de bônus</legend>
+          <label aria-label="Bonus Start Number">Números entre
+            <input type="number" name="bonusStart" value="1" required>
+          </label>
+          <label aria-label="Bonus End Number">e
+            <input type="number" name="bonusEnd" value="12" required>
+          </label>
+        </fieldset>
+      </form>
+    <script src="main.js"></script>
+</body>
+</html>
